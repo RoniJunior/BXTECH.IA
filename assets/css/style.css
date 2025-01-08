@@ -15,8 +15,8 @@
   --color-gray1: #3d4143;
   --color-gray2: #9c9d9d;
   --color-white: #f6f6f6;
-  --color-destaque1: #e7fc00;
-  --color-destaque2: #728e6f;
+  --color-destaque1: #08fc28;
+  --color-destaque2: #56994f;
 }
 
 /* Estilizando a barra de rolagem */
@@ -177,7 +177,7 @@ a {
 
 .line {
   fill: none;
-  stroke: white;
+  stroke: rgb(8, 252, 40);
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 3;
