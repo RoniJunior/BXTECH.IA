@@ -5,175 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Obrigado</title>
     <script src="assets/js/slideSobre.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        box-sizing: border-box;
+      }
+      #sobre {
+        width: 100%;
+        max-width: 1200px;
+        padding: 1rem;
+        text-align: center;
+      }
+      .container-sobre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+      }
+      .headline-sobre {
+        overflow: hidden;
+        width: 100%;
+      }
+      .headline-scroll {
+        white-space: nowrap;
+        animation: scroll 20s linear infinite;
+      }
+      .headline-scroll span {
+        font-size: 2rem;
+      }
+      .headline-scroll .bold {
+        font-weight: bold;
+        color: #07fc27;
+      }
+      .headline-scroll .light {
+        font-weight: lighter;
+      }
+      .headline-scroll .divisor {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: gray;
+        border-radius: 50%;
+        margin: 0 10px;
+      }
+      .conteudo-sobre {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        width: 100%;
+      }
+      .left-sobre {
+        flex: 1;
+        min-width: 300px;
+        text-align: left;
+      }
+      .right-sobre {
+        flex: 1;
+        min-width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .imagem-sobre img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
   </head>
-  <body
-    style="
-      margin: 0;
-      padding: 0;
-      background-color: black;
-      color: white;
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      box-sizing: border-box;
-    "
-  >
-    <section
-      id="sobre"
-      style="width: 100%; max-width: 1200px; padding: 1rem; text-align: center"
-    >
-      <div
-        class="container-sobre"
-        style="
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          gap: 2rem;
-        "
-      >
+  <body>
+    <section id="sobre">
+      <div class="container-sobre">
         <!-- Slide Sobre -->
-        <div class="headline-sobre" style="overflow: hidden; width: 100%">
-          <div
-            class="headline-scroll"
-            id="headline-scroll"
-            style="white-space: nowrap; animation: scroll 20s linear infinite"
-          >
-            <span
-              class="bold"
-              style="font-weight: bold; color: #07fc27; font-size: 2rem"
-              >AUTOMAÇÃO</span
-            >
-            <span
-              class="divisor"
-              style="
-                display: inline-block;
-                width: 20px;
-                height: 20px;
-                background-color: gray;
-                border-radius: 50%;
-                margin: 0 10px;
-              "
-            ></span>
-            <span class="light" style="font-weight: lighter; font-size: 2rem"
-              >&</span
-            >
-            <span
-              class="divisor"
-              style="
-                display: inline-block;
-                width: 20px;
-                height: 20px;
-                background-color: gray;
-                border-radius: 50%;
-                margin: 0 10px;
-              "
-            ></span>
-            <span
-              class="bold"
-              style="font-weight: bold; color: #07fc27; font-size: 2rem"
-              >INOVAÇÃO</span
-            >
-            <span
-              class="divisor"
-              style="
-                display: inline-block;
-                width: 20px;
-                height: 20px;
-                background-color: gray;
-                border-radius: 50%;
-                margin: 0 10px;
-              "
-            ></span>
-            <span class="light" style="font-weight: lighter; font-size: 2rem"
-              >EM</span
-            >
-            <span
-              class="divisor"
-              style="
-                display: inline-block;
-                width: 20px;
-                height: 20px;
-                background-color: gray;
-                border-radius: 50%;
-                margin: 0 10px;
-              "
-            ></span>
-            <span
-              class="bold"
-              style="font-weight: bold; color: #07fc27; font-size: 2rem"
-              >CHATBOTS</span
-            >
-            <span
-              class="divisor"
-              style="
-                display: inline-block;
-                width: 20px;
-                height: 20px;
-                background-color: gray;
-                border-radius: 50%;
-                margin: 0 10px;
-              "
-            ></span>
-            <span class="light" style="font-weight: lighter; font-size: 2rem"
-              >COM</span
-            >
-            <span
-              class="divisor"
-              style="
-                display: inline-block;
-                width: 20px;
-                height: 20px;
-                background-color: gray;
-                border-radius: 50%;
-                margin: 0 10px;
-              "
-            ></span>
-            <span class="light" style="font-weight: lighter; font-size: 2rem"
-              >EXCELÊNCIA</span
-            >
+        <div class="headline-sobre">
+          <div class="headline-scroll" id="headline-scroll">
+            <span class="bold">AUTOMAÇÃO</span>
+            <span class="divisor"></span>
+            <span class="light">&</span>
+            <span class="divisor"></span>
+            <span class="bold">INOVAÇÃO</span>
+            <span class="divisor"></span>
+            <span class="light">EM</span>
+            <span class="divisor"></span>
+            <span class="bold">CHATBOTS</span>
+            <span class="divisor"></span>
+            <span class="light">COM</span>
+            <span class="divisor"></span>
+            <span class="light">EXCELÊNCIA</span>
           </div>
         </div>
-        <div
-          class="conteudo-sobre"
-          style="
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-            gap: 2rem;
-            width: 100%;
-          "
-        >
-          <div
-            class="left-sobre"
-            style="flex: 1; min-width: 300px; text-align: left"
-          >
+        <div class="conteudo-sobre">
+          <div class="left-sobre">
             <div class="textos-sobre">
-              <h1 style="color: #07fc27; font-size: 2.5rem">
-                Obrigado pelo seu Contato!
-              </h1>
-              <h2 style="font-size: 1.8rem">Retornarei em breve.</h2>
+              <h1 style="color: #07fc27">Obrigado pelo seu Contato!</h1>
+              <h2>Retornarei em breve.</h2>
             </div>
           </div>
-          <div
-            class="right-sobre"
-            style="
-              flex: 1;
-              min-width: 300px;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-            "
-          >
+          <div class="right-sobre">
             <div class="imagem-sobre">
-              <img
-                src="assets/img/BXTech&BOT.png"
-                alt="BX Tech Bot"
-                style="max-width: 100%; height: auto"
-              />
+              <img src="assets/img/BXTech&BOT.png" alt="BX Tech Bot" />
             </div>
           </div>
         </div>
